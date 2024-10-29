@@ -6,7 +6,6 @@ public class Ejercicio16 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
 			Scanner sc = new Scanner(System.in);
 			
 	        System.out.print("Introduzca numero de filas: ");
