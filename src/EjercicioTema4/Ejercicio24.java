@@ -19,18 +19,20 @@ public class Ejercicio24 {
 	}
 	
 	public static void llegirEuros() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Escriu un valor en cantidad de euros");
-		euros = sc.nextDouble();
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Escriu un valor en cantidad de euros");
+			euros = sc.nextDouble();
+		}
 	}
 	
 	public static void llegirMoneda() {
-		Scanner sc = new Scanner (System.in);
-		System.out.println("Escriu a quina moneda vols cambiar el valor escrit.");
-		System.out.println("* Lliures");
-		System.out.println("* Dolars");
-		System.out.println("* Iens");
-		moneda = sc.next();
+		try (Scanner sc = new Scanner (System.in)) {
+			System.out.println("Escriu a quina moneda vols cambiar el valor escrit.");
+			System.out.println("* Lliures");
+			System.out.println("* Dolars");
+			System.out.println("* Iens");
+			moneda = sc.next();
+		}
 		
 	}
 	
