@@ -1,4 +1,4 @@
-package EjercicioTema5_6;
+package Ejercicio6_5Institut;
 
 public class Alumne extends Personas{
 	private String nivell;

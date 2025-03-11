@@ -1,4 +1,4 @@
-package EjercicioTema5_6;
+package Ejercicio6_5Institut;
 
 import java.util.Scanner;
 
