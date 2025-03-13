@@ -2,8 +2,6 @@ package ExamenKarina;
 
 import java.util.Scanner;
 
-import Hotel.Reserva;
-
 public class GestionObrasArte {
 	
 	static boolean salir = false;
@@ -106,7 +104,7 @@ public class GestionObrasArte {
 			 sc.nextLine();
 			 
 			 Pintura pintura = new Pintura(titulo, autor, creacion, tecnica);
-			 GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, tecnica);
+			// GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, tecnica);
 			 
 			 
 		 } else if (opcionObra == 2) {
@@ -122,7 +120,7 @@ public class GestionObrasArte {
 			 sc.nextLine();
 			 
 			 Escultura escultura = new Escultura(titulo, autor, creacion, material);
-			 GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, material);
+			 //GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, material);
 			 
 			 
 		 } else if (opcionObra == 3) {
@@ -138,7 +136,7 @@ public class GestionObrasArte {
 			 sc.nextLine();
 			 
 			 Fotografia fotografia = new Fotografia(titulo, autor, creacion, tipo);
-			 GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, tipo);;
+			 //GestionObrasArte[contador++] = new ObraArte(titulo, autor, creacion, tipo);;
 		 }
 	}
 	

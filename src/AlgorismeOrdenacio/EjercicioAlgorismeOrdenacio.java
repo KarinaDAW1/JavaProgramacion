@@ -120,7 +120,6 @@ public class EjercicioAlgorismeOrdenacio {
 			for(int i = 0; i < n - 1; i++) {
 				for(int j = 0; j < n ; j++) {
 					
-					//Aquí ordenamos en bombolla.
 					if(LlistaDesordenada[i] > LlistaDesordenada[j - 1]) {
 						int Llista = LlistaDesordenada[i];
 						LlistaDesordenada[i] = LlistaDesordenada[j];
@@ -136,14 +135,45 @@ public class EjercicioAlgorismeOrdenacio {
 	}
 	 
 	private static void OrdenacioSeleccioDirecta() {
-			
-			
+	    int n = LlistaDesordenada.length;
+
+	    for (int i = 0; i < n - 1; i++) {
+	        int minIdx = i; 
+	        for (int j = i + 1; j < n; j++) {
+	            if (LlistaDesordenada[j] < LlistaDesordenada[minIdx]) {
+	                minIdx = j;
+	            }
+	        }
+	        int temp = LlistaDesordenada[minIdx];
+	        LlistaDesordenada[minIdx] = LlistaDesordenada[i];
+	        LlistaDesordenada[i] = temp;
+	    }
+
+	    System.out.println("Llista ordenada per selecció directa:");
+	    for (int i = 0; i < n; i++) {
+	        System.out.print(LlistaDesordenada[i] + " ");
+	    }
 	}
 
 	private static void OrdenacioIntercanviDirecta() {
-			
-			
+	    int n = LlistaDesordenada.length;
+
+	    for (int i = 0; i < n - 1; i++) {
+	        for (int j = i + 1; j < n; j++) {
+	            if (LlistaDesordenada[i] > LlistaDesordenada[j]) {
+	                int temp = LlistaDesordenada[i];
+	                LlistaDesordenada[i] = LlistaDesordenada[j];
+	                LlistaDesordenada[j] = temp;
+	            }
+	        }
+	    }
+
+	    System.out.println("Llista ordenada per intercanvi directa:");
+	    for (int i = 0; i < n; i++) {
+	        System.out.print(LlistaDesordenada[i] + " ");
+	    }
 	}
+
 }
 
 
